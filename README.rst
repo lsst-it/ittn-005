@@ -1,7 +1,7 @@
 .. image:: https://img.shields.io/badge/ittn--005-lsst.io-brightgreen.svg
    :target: https://ittn-005.lsst.io
-.. image:: https://travis-ci.com/LSST-IT/ittn-005.svg
-   :target: https://travis-ci.com/LSST-IT/ittn-005
+.. image:: https://github.com/lsst-it/ittn-005/workflows/CI/badge.svg
+   :target: https://github.com/lsst-it/ittn-005/actions/
 ..
   Uncomment this section and modify the DOI strings to include a Zenodo DOI badge in the README
   .. image:: https://zenodo.org/badge/doi/10.5281/zenodo.#####.svg
@@ -21,7 +21,7 @@ The puppet standards and practices to be used within the LSST On-Prem Deployment
 - Publication URL: https://ittn-005.lsst.io
 - Alternative editions: https://ittn-005.lsst.io/v
 - GitHub repository: https://github.com/LSST-IT/ittn-005
-- Build system: https://travis-ci.com/LSST-IT/ittn-005
+- Build system: https://github.com/lsst-it/ittn-005/actions/
 
 
 Build this technical note
