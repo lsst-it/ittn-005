@@ -42,6 +42,20 @@ For example, 1659 on a Friday afternoon may not be the best time to roll out a n
 The alternative would be to not allow feature branches to be merged until they are considered complete and it is a convenient time to roll out those changes across all sites.
 The major downside to that approach is that it encourages large, monolithic, and long lived feature branches that are prone to merge conflicts and are more difficult to review relative to a multiple small, inter-related pull-requests.
 
+PR Labels
+^^^^^^^^^
+
+All Github pull-requests SHALL be labeled with exactly one of the following labels:
+
+* `enhancement`
+* `bug`
+* `skip-changelog`
+
+These labels are by `github changelog generator <https://github.com/github-changelog-generator/github-changelog-generator>`_ to machine generator a "CHANGELOG".
+
+Most PRs should either be adding a new feature or functionality or fixing a bug.
+The `skip-changelog` label is for "plumbing" updates to the repo itself, such as the `Gemfile`, which SHALL NOT have an impact on hosts.
+
 Testing
 -------
 
