@@ -4,8 +4,6 @@
 
 .. sectnum::
 
-.. TODO: Delete the note below before merging new content to the master branch.
-
 Source Code
 ===========
 
@@ -23,21 +21,22 @@ Key Repos
 Git / Github Workflow
 ---------------------
 
-The lsst-it puppet repos follow the common pattern of changes being developed on feature branches, which then SHALL merged into the `master` (TODO: rename to `main`) branch, using Github's pull-request feature.
-Commit(s) SHALL NOT be directly pushed onto the `master` branch. All changes to this branch MUST be made via a pull-request.
+The lsst-it puppet repos follow the common pattern of changes being developed on feature branches, which then SHALL merged into the `production` branch, using Github's pull-request feature.
+Commit(s) SHALL NOT be directly pushed onto the `production` branch. All changes to this branch MUST be made via a pull-request.
 
-The `master` ref is then branched to a site specific production branch using the pattern `<site>_production`. E.g.
+The `production` ref is then branched to a site specific production branch using the pattern `<site>_production`. E.g.
 
 * `cp_production`
-* `dev_production`
-* `ls_production`
-* `tu_production`
 
-A "production" branch functions much the same as a tag placed on a commit on the `master` branch, which is periodically "moved forward" to point to newer commits.
-A production branch SHALL NOT ever contain commits which are not already part of the `master`.
+.. note::
+
+   **Currently, only a site specific branch is used for `cp`/summit. These branches have been retired for all other sites.**
+
+A `<site>_production` branch functions much the same as a tag placed on a commit on the `production` branch, which is periodically "moved forward" to point to newer commits.
+A production branch SHALL NOT ever contain commits which are not already part of the `production`.
 
 The function of the production branch(es) is to control when change, any change at all, is allowed to happen for a site.
-A feature branch SHOULD be merged into `master` when that work is deemed complete enough for deployment.
+A feature branch SHOULD be merged into `production` when that work is deemed complete enough for deployment.
 However, when a feature is ready for deployment does not mean that it is convenient time in terms of operations to roll that feature out.
 For example, 1659 on a Friday afternoon may not be the best time to roll out a new feature to the summit during an observing campaign.
 The alternative would be to not allow feature branches to be merged until they are considered complete and it is a convenient time to roll out those changes across all sites.
