@@ -16,7 +16,7 @@ github `lsst-it <https://github.com/lsst-it/>`_ organization.
 Key Repos
 ---------
 
-* control repo: https://github.com/lsst-it/lsst-itconf
+* control repo: https://github.com/lsst-it/lsst-control
 * hieradata: https://github.com/lsst-it/lsst-puppet-hiera
 * "private" hieradata: https://github.com/lsst-it/lsst-puppet-hiera-private
 
